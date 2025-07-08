@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerable Page</title>
+    <!-- jQuery version with known vulnerabilities -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <h1>Hello Vulnerable World!</h1>
+    <script>
+        $(document).ready(function () {
+            alert("This uses outdated jQuery!");
+        });
+    </script>
+</body>
+</html>
